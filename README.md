@@ -1,9 +1,6 @@
 # Mysql_Python
 
-**Business Intelligence Course**
-
-<br>
-
+**Business Intelligence Course**<br>
 Auteur : **@Papa Ba GAYE**
 
 ```
