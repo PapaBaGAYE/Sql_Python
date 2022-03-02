@@ -5,6 +5,7 @@ import numpy as np
 
 credit = pd.read_excel("C:/Users/Papa Ba GAYE/Desktop/Credit.xlsx")
 # print(credit)
+
 # def ajouter(table):
 #   for sex, nom, date, pu, qte in zip(credit["CodeClient"], credit["CodeProduit"], credit["DateVente"],  credit["PrixUnitaire"], credit["Quantité"]):
 #     request = "INSERT into %s (CodeClient, CodeProduit, DateVente, PrixUnitaire, Quantité) VALUES (%s, %s, %s, %s, %s)"
