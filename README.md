@@ -8,7 +8,9 @@ CREATE TABLE `SRC_Vente` (
   `PrixUnitaire` INT NULL,
   `Quantité` INT NULL,
 PRIMARY KEY (`CodeClient`));
+```
 
+```
 CREATE TABLE `SAS_Vente` ( 
   `CodeClient` VARCHAR(20) NOT NULL,
   `CodeProduit` VARCHAR(20) NOT NULL, 
@@ -16,7 +18,9 @@ CREATE TABLE `SAS_Vente` (
   `PrixUnitaire` INT NULL,
   `Quantité` INT NULL,
 PRIMARY KEY (`CodeClient`));
+```
 
+```
 CREATE TABLE `REJET_Vente` ( 
   `CodeClient` VARCHAR(20) NOT NULL,
   `CodeProduit` VARCHAR(20) NOT NULL, 
