@@ -1,6 +1,7 @@
 # Mysql_Python
 
 **Business Intelligence Course**
+Auteur : **@Papa Ba GAYE**
 
 ```
 CREATE TABLE `SRC_Vente` ( 
