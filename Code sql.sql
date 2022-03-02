@@ -19,6 +19,3 @@ END
 
 Alter table SRC_vente add NumLigne INT Identify(1, 1)
 
--- https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads | express
-    -- Télecharger le média
--- https://www.microsoft.com/fr-FR/download/details.aspx?id=58494
