@@ -1,5 +1,7 @@
 # Mysql_Python
 
+**Business Intelligence Course**
+
 ```
 CREATE TABLE `SRC_Vente` ( 
   `id` INT NOT NULL,
