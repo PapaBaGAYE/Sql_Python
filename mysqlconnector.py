@@ -5,13 +5,6 @@ import numpy as np
 import datetime
 
 credit = pd.read_excel("C:/Users/Papa Ba GAYE/Desktop/Ventes.xlsx")
-# print(credit)
-
-# def ajouter(table):
-#   for sex, nom, date, pu, qte in zip(credit["CodeClient"], credit["CodeProduit"], credit["DateVente"],  credit["PrixUnitaire"], credit["Quantité"]):
-#     request = "INSERT into %s (CodeClient, CodeProduit, DateVente, PrixUnitaire, Quantité) VALUES (%s, %s, %s, %s, %s)"
-#     cursor.execute(request, (table, sex, nom, date, pu, qte))
-#     conn.commit()
 
 connection_params = {
     'host': "localhost",
@@ -24,7 +17,7 @@ try:
   conn = mysql.connector.connect(host = "localhost", user = "root", password = "", database = "bi2",)
   cursor = conn.cursor()
 
-  ##################################################################################################
+  #======================================================================================================================================================#
   
   for sex, nom, date, pu, qte in zip(credit["CodeClient"], credit["CodeProduit"], credit["DateVente"],  credit["PrixUnitaire"], credit["Quantité"]):
     request = "INSERT into SRC_Vente (CodeClient, CodeProduit, DateVente, PrixUnitaire, Quantité) VALUES (%s, %s, %s, %s, %s)"
@@ -47,7 +40,7 @@ try:
     else:
       pass
 
-  #################################################################################################
+  #======================================================================================================================================================#
   request = "SELECT * from SRC_Vente"
   cursor.execute(request)
 
@@ -57,7 +50,7 @@ try:
   for i in all:
     print(f"ID : {i[0]} - Nom : {i[3]} - Sexe : {i[2]}")
 
-  #################################################################################################
+  #======================================================================================================================================================#
   request = "SELECT * from SAS_Vente"
   cursor.execute(request)
 
@@ -67,7 +60,7 @@ try:
   for i in all:
     print(f"ID : {i[0]} - Nom : {i[3]} - Sexe : {i[2]}")
 
-  #################################################################################################
+  #======================================================================================================================================================#
   request = "SELECT * from REJET_Vente"
   cursor.execute(request)
 
