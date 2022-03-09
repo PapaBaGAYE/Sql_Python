@@ -40,7 +40,7 @@ try:
       pass
 
   for sex, nom, date, pu, qte in zip(credit["CodeClient"], credit["CodeProduit"], credit["DateVente"],  credit["PrixUnitaire"], credit["Quantité"]):
-    if type(sex) == str and type(nom) == str and type(pu) == int and type(qte) == int:
+    if type(sex) == str and type(nom) == str and type(pu) == int and type(qte) == int or type(date) == datetime.datetime:
       request = "INSERT into SAS_Vente (CodeClient, CodeProduit, DateVente, PrixUnitaire, Quantité) VALUES (%s, %s, %s, %s, %s)"
       cursor.execute(request, (sex, nom, date, pu, qte))
       conn.commit()
