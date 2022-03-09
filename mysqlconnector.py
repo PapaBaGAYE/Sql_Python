@@ -48,7 +48,7 @@ try:
 
   print("SRC_Vente")
   for i in all:
-    print(f"ID : {i[0]} - Nom : {i[3]} - Sexe : {i[2]}")
+    print(f"ID : {i[0]} - CodeClient : {i[1]} - CodeProduit : {i[2]} - Date : {i[3]} - PU : {i[4]} - Qté : {i[5]}")
 
   #======================================================================================================================================================#
   request = "SELECT * from SAS_Vente"
@@ -58,7 +58,7 @@ try:
 
   print("SAS_Vente")
   for i in all:
-    print(f"ID : {i[0]} - Nom : {i[3]} - Sexe : {i[2]}")
+    print(f"ID : {i[0]} - CodeClient : {i[1]} - CodeProduit : {i[2]} - Date : {i[3]} - PU : {i[4]} - Qté : {i[5]}")
 
   #======================================================================================================================================================#
   request = "SELECT * from REJET_Vente"
@@ -68,7 +68,7 @@ try:
 
   print("REJET_Vente")
   for i in all:
-    print(f"ID : {i[0]} - Nom : {i[3]} - Sexe : {i[2]}")
+    print(f"ID : {i[0]} - CodeClient : {i[1]} - CodeProduit : {i[2]} - Date : {i[3]} - PU : {i[4]} - Qté : {i[5]}")
 
 except mysql.connector.Error as e:
   if e.errno == errorcode.ER_ACCESS_DENIED_ERROR:
