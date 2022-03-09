@@ -35,3 +35,40 @@ CREATE TABLE `REJET_Vente` (
   `Quantité` INT NULL,
 PRIMARY KEY (`id`));
 ```
+
+```
+SELECT TOP (1000) [id]
+      ,[CodeClient]
+      ,[CodeProduit]
+      ,[DateVente]
+      ,[PrixUnitaire]
+      ,[Quantité]
+  FROM [TPBI].[dbo].[SRC_Vente]
+
+CREATE TABLE SRC_Vente ( 
+  id INT NOT NULL,
+  CodeClient VARCHAR(20),
+  CodeProduit VARCHAR(20), 
+  DateVente DATE,
+  PrixUnitaire INT,
+  Quantité INT,
+PRIMARY KEY (id));
+
+CREATE TABLE SAS_Vente ( 
+  id INT NOT NULL,
+  CodeClient VARCHAR(20),
+  CodeProduit VARCHAR(20), 
+  DateVente DATE,
+  PrixUnitaire INT,
+  Quantité INT,
+PRIMARY KEY (id));
+
+CREATE TABLE REJET_Vente ( 
+  id INT NOT NULL,
+  CodeClient VARCHAR(20),
+  CodeProduit VARCHAR(20), 
+  DateVente DATE,
+  PrixUnitaire INT,
+  Quantité INT,
+PRIMARY KEY (id));
+```
