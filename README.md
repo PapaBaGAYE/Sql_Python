@@ -1,5 +1,6 @@
 # Mysql_Python
 
+### MysQl
 **Business Intelligence Course**<br>
 Auteur : **@Papa Ba GAYE**
 
@@ -36,6 +37,7 @@ CREATE TABLE `REJET_Vente` (
 PRIMARY KEY (`id`));
 ```
 
+### SQL Server
 ```
 SELECT TOP (1000) [id]
       ,[CodeClient]
