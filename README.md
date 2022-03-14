@@ -1,6 +1,6 @@
 # Mysql_Python
 
-### MysQl
+### MySQL
 **Business Intelligence Course**<br>
 Auteur : **@Papa Ba GAYE**
 
